@@ -4,7 +4,14 @@
 
 Чтобы запустить проект необходимо:
 
-Скачать проект с github и поместить его в отдельную папку.
-Прописать в терминале команду: -npm install, чтобы установить все необходимые модули.
-Создаем файл .env копируем его с файла .env.example. Вводим данные своей базы данных (DB_DATABASE, DB_USERNAME, DB_PASSWORD). Для работы почты я использовал сервис mailtrap. Чтобы заработал mailtrap, нужно заменить "MAIL_MAILER, MAIL_HOST" и остальные данные для работы почты, на свои данные в файле ".env".
-Проект готов, осталось только его запустить, написав в терминале: -php artisan serve#
+1. скачать проект и открыть через редактор кода
+1. прописать в терминале composer update
+2. переименовать .env.example в .env
+3. прописать в терминале php artisan key:generate
+4. установить почту и базу данных в .env
+5. прописать в терминале php artisan migrate 
+6. прописать в терминале npm install
+7. прописать в терминале npm run build 
+8. папку ru перекинуть в vendor/laravel/framework/src/illuminate/translation/lang/
+9. (http/controller/auth/editprofilecontroller.php добавить изменение почты)
+10. запустить проект прописав в терминале php artisan serve
