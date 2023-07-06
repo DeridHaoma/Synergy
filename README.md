@@ -5,7 +5,7 @@
 Чтобы запустить проект необходимо:
 
 1. скачать проект и открыть через редактор кода
-1. прописать в терминале composer update
+1. прописать в терминале composer update --ignore-platform-req=ext-fileinfo
 2. переименовать .env.example в .env
 3. прописать в терминале php artisan key:generate
 4. установить почту и базу данных в .env
