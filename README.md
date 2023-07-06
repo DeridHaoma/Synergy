@@ -9,9 +9,9 @@
 2. переименовать .env.example в .env
 3. прописать в терминале php artisan key:generate
 4. установить почту и базу данных в .env
-5. прописать в терминале php artisan migrate 
+5. прописать в терминале php artisan migrate, далее прописать yes
 6. прописать в терминале npm install
 7. прописать в терминале npm run build 
 8. папку ru перекинуть в vendor/laravel/framework/src/illuminate/translation/lang/
-9. (http/controller/auth/editprofilecontroller.php добавить изменение почты)
+9. (app/http/controller/auth/editprofilecontroller.php добавить изменение почты)
 10. запустить проект прописав в терминале php artisan serve
